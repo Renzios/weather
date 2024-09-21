@@ -26,7 +26,7 @@ header {
     padding: 16px;
 
     position: sticky;
-    top: 0;
+    top: calc(50% - 16px - 3.5rem);
 
     display: flex;
     flex-direction: column;
@@ -34,6 +34,7 @@ header {
     align-items: center;
 
     color: var(--light-color);
+    line-height: 1;
 }
 
 .temperature {
@@ -56,33 +57,71 @@ header {
 
 main {
     margin: auto;
-    padding: 16px;
+    padding: 32px;
     max-width: 1440px;
     min-height: var(--header-main-height);
 
     display: grid;
     grid-template-areas:
-        "temp feelslike"
+        "temp temp"
         "humidity precipprob"
         "windspeed uvindex"
         "sunrise sunset";
-    gap: 16px;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
 
     background-color: var(--light-color);
 }
 
 .card {
     border-radius: 16px;
+    padding: 16px;
 
-    background-color: white;
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    
+    background-color: var(--dark-color);
+    color: var(--light-color);
+}
+
+.card-header {
+    margin: 0;
+    font-size: 1.5rem;
+    line-height: 1;
+}
+
+.card-body {
+    flex: 1;
+
+    display: flex;
+    justify-content: space-evenly;
+    gap: 32px;
+}
+
+.figure {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.value {
+    margin: 0;
+    font-size: 2rem;
+    line-height: 1;
+}
+
+.caption {
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1;
 }
 
 .temp {
     grid-area: temp;
-}
-
-.feelslike {
-    grid-area: feelslike
 }
 
 .humidity {
@@ -119,12 +158,16 @@ footer {
     main {
         grid-template-areas:
         "temp"
-        "feelslike"
         "humidity"
         "precipprob"
         "windspeed"
         "uvindex"
         "sunrise"
         "sunset";
+        grid-template-columns: 1fr;
+    }
+
+    .card-body {
+        flex-direction: column;
     }
 }

@@ -1,0 +1,23 @@
+:root {
+    --header-footer-height: 160px;
+    --section-height: calc(100vh - var(--header-footer-height));
+}
+
+header {
+    height: var(--header-footer-height);
+
+    position: sticky;
+    top: 0;
+}
+
+.hero {
+    height: var(--section-height)
+}
+
+main {
+    min-height: var(--section-height)
+}
+
+footer {
+    height: var(--header-footer-height)
+}

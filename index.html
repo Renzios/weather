@@ -5,76 +5,98 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="modern-normalize.css">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
     <title>Weather</title>
 </head>
 <body>
     <header>
         <div class="summary">
-            <h1 class="temperature">26.7°C</h1>
-            <h2 class="city">Manila</h2>
-            <h3 class="conditions">Rain, Overcast</h2>
+            <h1 class="time"></h1>
+            <h2 class="date"></h2>
+            <h3 class="city">Manila, Philippines</h2>
         </div>
     </header>
     <main>
         <div class="card temp">
-            <h3 class="card-header">Temperature</h3>
+            <div class="card-header">
+                <img src="images/temperature.svg" alt="Thermometer" class="icon">
+                <h3 class="card-title">Temperature</h3>
+            </div>
             <div class="card-body">
                 <div class="figure">
-                    <h5 class="value">28.9°C</h5>
-                    <h4 class="caption">MAX</h4>
+                    <h4 class="value">28.9°C</h5>
+                    <h5 class="caption">MAX</h4>
                 </div>
                 <div class="figure">
-                    <h5 class="value">26.7°C</h5>
-                    <h4 class="caption">AVG</h4>
+                    <h4 class="value">26.7°C</h5>
+                    <h5 class="caption">AVG</h4>
                 </div>
                 <div class="figure">
-                    <h5 class="value">24.8°C</h5>
-                    <h4 class="caption">MIN</h4>
+                    <h4 class="value">24.8°C</h5>
+                    <h5 class="caption">MIN</h4>
                 </div>
             </div>
         </div>
         <div class="card humidity">
-            <h3 class="card-header">Humidity</h3>
+            <div class="card-header">
+                <img src="images/humidity.svg" alt="Water Droplet Percent" class="icon">
+                <h3 class="card-title">Humidity</h3>
+            </div>
         </div>
         <div class="card precipprob">
-            <h3 class="card-header">Chance of Rain</h3>
+            <div class="card-header">
+                <img src="images/chanceofrain.svg" alt="Cloud Percent" class="icon">
+                <h3 class="card-title">Chance of Rain</h3>
+            </div>
         </div>
         <div class="card windspeed">
-            <h3 class="card-header">Wind Speed</h3>
+            <div class="card-header">
+                <img src="images/windspeed.svg" alt="Wind" class="icon">
+                <h3 class="card-title">Wind Speed</h3>
+            </div>
             <div class="card-body">
                 <div class="figure">
-                    <h5 class="value">16.3</h5>
-                    <h4 class="caption">KPH</h4>
+                    <h4 class="value">16.3</h5>
+                    <h5 class="caption">KPH</h4>
                 </div>
                 </div>
             </div>
         </div>
         <div class="card uvindex">
-            <h3 class="card-header">UV Index</h3>
+            <div class="card-header">
+                <img src="images/uvindex.svg" alt="Sun Rays" class="icon">
+                <h3 class="card-title">UV Index</h3>
+            </div>
             <div class="card-body">
                 <div class="figure">
-                    <h5 class="value">4</h5>
-                    <h4 class="caption">MODERATE</h4>
+                    <h4 class="value">4</h5>
+                    <h5 class="caption">MODERATE</h4>
                 </div>
                 </div>
             </div>
         </div>
         <div class="card sunrise">
-            <h3 class="card-header">Sunrise</h3>
+            <div class="card-header">
+                <img src="images/sunrise.svg" alt="Sunrise" class="icon">
+                <h3 class="card-title">Sunrise</h3>
+            </div>
             <div class="card-body">
                 <div class="figure">
-                    <h5 class="value">05:45:03</h5>
-                    <h4 class="caption">AM</h4>
+                    <h4 class="value">05:45:03</h5>
+                    <h5 class="caption">AM</h4>
                 </div>
                 </div>
             </div>
         </div>
         <div class="card sunset">
-            <h3 class="card-header">Sunset</h3>
+            <div class="card-header">
+                <img src="images/sunset.svg" alt="Sunset" class="icon">
+                <h3 class="card-title">Sunset</h3>
+            </div>
             <div class="card-body">
                 <div class="figure">
-                    <h5 class="value">17:53:03</h5>
-                    <h4 class="caption">PM</h4>
+                    <h4 class="value">17:53:03</h5>
+                    <h5 class="caption">PM</h4>
                 </div>
                 </div>
             </div>

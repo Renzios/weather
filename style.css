@@ -1,6 +1,6 @@
 :root {
     --header-footer-height: 160px;
-    --section-height: calc(100vh - var(--header-footer-height));
+    --section-main-height: calc(100vh - var(--header-footer-height));
 }
 
 header {
@@ -11,11 +11,11 @@ header {
 }
 
 .hero {
-    height: var(--section-height)
+    height: var(--section-main-height)
 }
 
 main {
-    min-height: var(--section-height)
+    min-height: var(--section-main-height)
 }
 
 footer {

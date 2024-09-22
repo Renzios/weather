@@ -3,120 +3,217 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="modern-normalize.css">
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
     <title>Weather</title>
 </head>
 <body>
+    <a id="top"></a>
     <header>
-        <div class="foreground">
-            <div class="summary">
+        <div class="background">
+            <div class="foreground">
                 <h1 class="time"></h1>
                 <h2 class="city">Manila</h2>
             </div>
         </div>
     </header>
     <main>
-        <div class="card temp">
-            <div class="card-header">
-                <img src="images/temperature.svg" alt="Thermometer" class="icon">
-                <h3 class="card-title">Temperature</h3>
-            </div>
-            <div class="card-body">
-                <div class="figure">
-                    <h4 class="value">28.9°C</h4>
-                    <h5 class="caption">MAX</h5>
+        <section class="weather">
+            <div class="card temp">
+                <div class="card-header">
+                    <img src="images/temperature.svg" alt="Thermometer" class="icon">
+                    <h3 class="card-title">Temperature</h3>
                 </div>
-                <div class="figure">
-                    <h4 class="value">26.7°C</h4>
-                    <h5 class="caption">AVG</h5>
-                </div>
-                <div class="figure">
-                    <h4 class="value">24.8°C</h4>
-                    <h5 class="caption">MIN</h5>
-                </div>
-            </div>
-        </div>
-        <div class="card humidity">
-            <div class="card-header">
-                <img src="images/humidity.svg" alt="Water Droplet Percent" class="icon">
-                <h3 class="card-title">Humidity</h3>
-            </div>
-            <div class="card-body">
-                <div class="figure">
-                    <h4 class="value">90.6</h4>
-                    <h5 class="caption">%</h5>
+                <div class="card-body">
+                    <div class="figure">
+                        <h4 class="value">28.9°C</h4>
+                        <h5 class="caption">MAX</h5>
+                    </div>
+                    <div class="figure">
+                        <h4 class="value">26.7°C</h4>
+                        <h5 class="caption">AVG</h5>
+                    </div>
+                    <div class="figure">
+                        <h4 class="value">24.8°C</h4>
+                        <h5 class="caption">MIN</h5>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="card precipprob">
-            <div class="card-header">
-                <img src="images/chanceofrain.svg" alt="Cloud Percent" class="icon">
-                <h3 class="card-title">Chance of Rain</h3>
-            </div>
-            <div class="card-body">
-                <div class="figure">
-                    <h4 class="value">100.0</h4>
-                    <h5 class="caption">%</h5>
+            <div class="card humidity">
+                <div class="card-header">
+                    <img src="images/humidity.svg" alt="Water Droplet Percent" class="icon">
+                    <h3 class="card-title">Humidity</h3>
+                </div>
+                <div class="card-body">
+                    <div class="figure">
+                        <h4 class="value">90.6</h4>
+                        <h5 class="caption">%</h5>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="card windspeed">
-            <div class="card-header">
-                <img src="images/windspeed.svg" alt="Wind" class="icon">
-                <h3 class="card-title">Wind Speed</h3>
-            </div>
-            <div class="card-body">
-                <div class="figure">
-                    <h4 class="value">16.3</h4>
-                    <h5 class="caption">KPH</h5>
+            <div class="card precipprob">
+                <div class="card-header">
+                    <img src="images/chanceofrain.svg" alt="Cloud Percent" class="icon">
+                    <h3 class="card-title">Chance of Rain</h3>
                 </div>
-                </div>
-            </div>
-        </div>
-        <div class="card uvindex">
-            <div class="card-header">
-                <img src="images/uvindex.svg" alt="Sun Rays" class="icon">
-                <h3 class="card-title">UV Index</h3>
-            </div>
-            <div class="card-body">
-                <div class="figure">
-                    <h4 class="value">4</h4>
-                    <h5 class="caption">MODERATE</h5>
-                </div>
+                <div class="card-body">
+                    <div class="figure">
+                        <h4 class="value">100.0</h4>
+                        <h5 class="caption">%</h5>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="card sunrise">
-            <div class="card-header">
-                <img src="images/sunrise.svg" alt="Sunrise" class="icon">
-                <h3 class="card-title">Sunrise</h3>
-            </div>
-            <div class="card-body">
-                <div class="figure">
-                    <h4 class="value">05:45:03</h4>
-                    <h5 class="caption">AM</h5>
+            <div class="card windspeed">
+                <div class="card-header">
+                    <img src="images/windspeed.svg" alt="Wind" class="icon">
+                    <h3 class="card-title">Wind Speed</h3>
                 </div>
-                </div>
-            </div>
-        </div>
-        <div class="card sunset">
-            <div class="card-header">
-                <img src="images/sunset.svg" alt="Sunset" class="icon">
-                <h3 class="card-title">Sunset</h3>
-            </div>
-            <div class="card-body">
-                <div class="figure">
-                    <h4 class="value">05:53:03</h4>
-                    <h5 class="caption">PM</h5>
-                </div>
+                <div class="card-body">
+                    <div class="figure">
+                        <h4 class="value">16.3</h4>
+                        <h5 class="caption">KPH</h5>
+                    </div>
+                    </div>
                 </div>
             </div>
-        </div>
+            <div class="card uvindex">
+                <div class="card-header">
+                    <img src="images/uvindex.svg" alt="Sun Rays" class="icon">
+                    <h3 class="card-title">UV Index</h3>
+                </div>
+                <div class="card-body">
+                    <div class="figure">
+                        <h4 class="value">4</h4>
+                        <h5 class="caption">MODERATE</h5>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card sunrise">
+                <div class="card-header">
+                    <img src="images/sunrise.svg" alt="Sunrise" class="icon">
+                    <h3 class="card-title">Sunrise</h3>
+                </div>
+                <div class="card-body">
+                    <div class="figure">
+                        <h4 class="value">05:45:03</h4>
+                        <h5 class="caption">AM</h5>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card sunset">
+                <div class="card-header">
+                    <img src="images/sunset.svg" alt="Sunset" class="icon">
+                    <h3 class="card-title">Sunset</h3>
+                </div>
+                <div class="card-body">
+                    <div class="figure">
+                        <h4 class="value">05:53:03</h4>
+                        <h5 class="caption">PM</h5>
+                    </div>
+                    </div>
+                </div>
+            </div><div class="card temp">
+                <div class="card-header">
+                    <img src="images/temperature.svg" alt="Thermometer" class="icon">
+                    <h3 class="card-title">Temperature</h3>
+                </div>
+                <div class="card-body">
+                    <div class="figure">
+                        <h4 class="value">28.9°C</h4>
+                        <h5 class="caption">MAX</h5>
+                    </div>
+                    <div class="figure">
+                        <h4 class="value">26.7°C</h4>
+                        <h5 class="caption">AVG</h5>
+                    </div>
+                    <div class="figure">
+                        <h4 class="value">24.8°C</h4>
+                        <h5 class="caption">MIN</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="card humidity">
+                <div class="card-header">
+                    <img src="images/humidity.svg" alt="Water Droplet Percent" class="icon">
+                    <h3 class="card-title">Humidity</h3>
+                </div>
+                <div class="card-body">
+                    <div class="figure">
+                        <h4 class="value">90.6</h4>
+                        <h5 class="caption">%</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="card precipprob">
+                <div class="card-header">
+                    <img src="images/chanceofrain.svg" alt="Cloud Percent" class="icon">
+                    <h3 class="card-title">Chance of Rain</h3>
+                </div>
+                <div class="card-body">
+                    <div class="figure">
+                        <h4 class="value">100.0</h4>
+                        <h5 class="caption">%</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="card windspeed">
+                <div class="card-header">
+                    <img src="images/windspeed.svg" alt="Wind" class="icon">
+                    <h3 class="card-title">Wind Speed</h3>
+                </div>
+                <div class="card-body">
+                    <div class="figure">
+                        <h4 class="value">16.3</h4>
+                        <h5 class="caption">KPH</h5>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card uvindex">
+                <div class="card-header">
+                    <img src="images/uvindex.svg" alt="Sun Rays" class="icon">
+                    <h3 class="card-title">UV Index</h3>
+                </div>
+                <div class="card-body">
+                    <div class="figure">
+                        <h4 class="value">4</h4>
+                        <h5 class="caption">MODERATE</h5>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card sunrise">
+                <div class="card-header">
+                    <img src="images/sunrise.svg" alt="Sunrise" class="icon">
+                    <h3 class="card-title">Sunrise</h3>
+                </div>
+                <div class="card-body">
+                    <div class="figure">
+                        <h4 class="value">05:45:03</h4>
+                        <h5 class="caption">AM</h5>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card sunset">
+                <div class="card-header">
+                    <img src="images/sunset.svg" alt="Sunset" class="icon">
+                    <h3 class="card-title">Sunset</h3>
+                </div>
+                <div class="card-body">
+                    <div class="figure">
+                        <h4 class="value">05:53:03</h4>
+                        <h5 class="caption">PM</h5>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
     <footer>
-        
+        <a href="https://github.com/Renzios" target="_blank">Developed by Lorenzo Nery</a>
+        <a href="#top">Back to top</a>
     </footer>
 </body>
 </html>

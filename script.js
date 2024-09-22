@@ -1,8 +1,8 @@
 const time = document.querySelector(".time");
 
 function setDate() {
-    const now = new Date();
-    time.textContent = now.toLocaleTimeString();
+    const date = new Date();
+    time.textContent = date.toLocaleTimeString();
 }
 
 setDate();

@@ -47,7 +47,7 @@
 .landing {
     height: var(--header-height);
 
-    background-image: url("./images./manila.webp");
+    background-image: url("../images./manila.webp");
     background-position: center;
     background-size: cover;
 }
